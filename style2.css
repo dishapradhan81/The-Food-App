@@ -1,0 +1,141 @@
+
+    @media screen and (max-width:1267px){
+    .navbar{
+        height: 8vh;
+        width:100%;
+        
+    }
+    .menu-container{
+        display: none;
+    }
+    .slider-img-pic{
+        height:65vh;
+        width:100%;
+    }
+    .description{
+        font-size: 20px;
+        right:15%;
+        
+    }
+    .description2{
+        font-size: 40px;
+        top:35%;
+        right:15%;
+    }
+    .description3{
+        font-size: 25px;
+        top:40%;
+        right:15%;
+
+    }
+    .slider-img-text2{
+        bottom:50%;
+
+    }
+    .slider-img-text3{
+        bottom: 45%;
+    }
+    .slider-prev-button, .slider-next-button{
+        top:35%;
+    }
+    .dotbox{
+        bottom: 30%;
+        left:40%;
+    }
+    .display-left,
+    .display-right{
+        top:35%;
+    }
+    .conatiner-title{
+    font-size:24px;
+    }
+    .conatiner-title2{
+        padding: 0 15px;
+        margin-top: 0;
+        font-size:24px;
+    }
+    #container-wrapper{
+        height:40vh;
+        
+        
+    }
+    .card{
+        height:40vh;
+        overflow-x: scroll;
+    }
+    .card2{
+        height:40vh;
+        overflow-x: scroll;
+    }
+    .login-box2 img {
+        display: none;
+    }
+    .login-box1{
+        height:70vh;
+        width:100vw;
+        margin:0 5px;
+    }
+    .login-box {
+        right: 40%;
+    }
+    .login-box-head {
+        font-size: 25px;
+    }
+    .login-page {
+        height: 350px;
+        width: 360px;
+    }
+    .form-heading{
+        font-size: 20px;
+    }
+    .changing-text .text {
+        font-size: 25px;
+    }
+    .searchInput {
+        width: 280px;
+    }
+    .searchInput::placeholder{
+        font-size: 12px;
+    }
+    .searchInput-box { 
+        right: 0;
+        width: 100px;
+        padding: 12px 5px;
+    }
+    .container3{
+        height: 40vh;
+    }
+    .container3 img {
+        width: 70px;
+        height: 120px;
+    }
+    .min-order{
+        padding: 0 0;
+    }
+    .min-order-para{
+        display: none;
+        
+    }
+    .min-order-head {
+        padding-left: 10px;
+        font-size: 16px;
+        text-align: center;
+        
+    }
+    .footerContent {
+        padding: 0 5px;
+        
+    }
+    .footerContent ul li {
+        font-size: 10px;
+        line-height: 2;
+        
+    }
+    .footerHeading{
+        font-size: 15px;
+    }
+    
+    
+
+
+}

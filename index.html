@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title> The Food App</title>
+</head>
+
+<body>
+
+    <!----------------------- Nav-Bar--------------------------------->
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <p class="logo"><i class="fa-solid fa-phone-flip"></i></p>
+                    <div class="logo-container2">
+                        <p class="logo2">ORDER NOW</p>
+                        <p class="logo2">01-2345-67890</p>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <span class="menu-items"><a href="#home">Homepage</a></span>
+                    <span class="menu-items"><a href="#menu">Menu</a></span>
+                    <span class="menu-items"><a href="#signin">Sign in</a></span>
+                    <span class="menu-items">
+                        <h2 class="menu-heading">Tasty</h2>
+                    </span>
+                    <span class="menu-items"><a a href="#service">Services</a></span>
+                    <span class="menu-items">Blog</span>
+                    <span class="menu-items">Contact</span>
+                </div>
+                <div class="cart-container">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!----------------------- Image Slider ----------------------------->
+        <div class="slider" id="home">
+            <div class="slider-container">
+                <div class="slider-img" style="display:block">
+                    <p class="description">HOT & SPICY</p>
+                    <h2 class="description2">PIZZA</h2>
+
+                    <div class="para2">
+                        <p class="slider-img-text2">50% OFF</p>
+                        <p class="slider-img-text3">ORDER NOW</p>
+                    </div>
+
+                    <img src="slide1.jpg" alt="" class="slider-img-pic">
+                </div>
+
+                <div class="slider-img">
+
+                    <p class="description">TRY OUT</p>
+                    <h2 class="description2">FRENCH</h2>
+                    <h2 class="description3">FOODS</h2>
+
+                    <img src="slide2.jpg" alt="" class="slider-img-pic">
+                </div>
+                <div class="slider-img">
+
+                    <p class="description">HOME LIKE</p>
+                    <h2 class="description2">DELICIOUS</h2>
+                    <h2 class="description3">FOODS</h2>
+
+                    <img src="slide3.jpg" alt="" class="slider-img-pic">
+                </div>
+            </div>
+
+            <button class="slider-prev-button" onclick="plusSlides(-1)">&#60;</button>
+            <button class="slider-next-button" onclick="plusSlides(1)">&#62;</button>
+
+            <div class="dotbox">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+
+
+        <!----------------------- Sliding Image Gallery -------------------------------->
+        <div class="container" id="menu">
+            <h1 class="conatiner-title">THE BEST INDIAN FOODS</h1>
+            <div id="container-wrapper">
+                <div class="container-wrapper-list">
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian1.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Biriyani</span>
+                            <span class="list-item-price">$7</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian2.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Panner Hydrabadi</span>
+                            <span class="list-item-price">$5</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian3.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Veg Thali</span>
+                            <span class="list-item-price">$6</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian4.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Gajar Halwa</span>
+                            <span class="list-item-price">$3</span>
+                        </div>
+
+                    </div>
+
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian1.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Biriyani</span>
+                            <span class="list-item-price">$7</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian2.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Panner Hydrabadi</span>
+                            <span class="list-item-price">$5</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian3.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Veg Thali</span>
+                            <span class="list-item-price">$6</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian4.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Gajar Halwa</span>
+                            <span class="list-item-price">$3</span>
+                        </div>
+
+                    </div>
+                    <div class="container-list-item">
+                        <div class="img-container">
+                            <img class="list-item-img" src="indian1.jpg">
+                            <button class="img-button" data-id="1">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add to Cart
+                            </button>
+                            </div>
+                        <div class="item-des">
+                            <span class="list-item-name">Biriyani</span>
+                            <span class="list-item-price">$7</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="display-left"> &#8656;</button>
+            <button class="display-right">&#8658;</button>
+
+        </div>
+
+
+        <!------------------- Menu Conatiner For Itallian Foods ---------------->
+        <h1 class="conatiner-title2">THE DELICIOUS ITALIAN CUISINE</h1>
+        <div class="card">
+
+            <div class="container-list-item">
+                <div class="img-container">
+                <img class="list-item-img" src="italy1.jpg">
+                <button class="img-button" data-id="1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+                </div>
+                <div class="item-des">
+                    <span class="list-item-name">Pasta</span>
+                    <span class="list-item-price">$5</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="italy2.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+                <div class="item-des">
+                    <span class="list-item-name">Pizza</span>
+                    <span class="list-item-price">$6</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="italy3.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+                <div class="item-des">
+                    <span class="list-item-name">Desert</span>
+                    <span class="list-item-price">$6</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="italy4.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+
+                <div class="item-des">
+                    <span class="list-item-name">Bruschetta</span>
+                    <span class="list-item-price">$15</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!------------------- Menu Conatiner For Maxican Foods ------------------->
+
+        <h1 class="conatiner-title2">THE MAXICAN DELIGHT</h1>
+        <div class="card2">
+
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="maxican1.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+
+                <div class="item-des">
+                    <span class="list-item-name">Tacos</span>
+                    <span class="list-item-price">$5</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="maxican2.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+
+                <div class="item-des">
+                    <span class="list-item-name">Guacamole</span>
+                    <span class="list-item-price">$10</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="maxican3.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+
+                <div class="item-des">
+                    <span class="list-item-name">Combo</span>
+                    <span class="list-item-price">$8</span>
+                </div>
+
+            </div>
+            <div class="container-list-item">
+                <div class="img-container">
+                    <img class="list-item-img" src="maxican5.jpg">
+                    <button class="img-button" data-id="1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                    </div>
+                <div class="item-des">
+                    <span class="list-item-name">Penne Pasta</span>
+                    <span class="list-item-price">$5</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!------------------ Cart ------------------>
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>Your Cart</h2>
+                <div class="cart-content">
+            <!----------------- Cart item ----------------->
+                 <div class="cart-item">
+                    <img src="italy1.jpg">
+                    <div>
+                        <h4>Pasta</h4>
+                        <h5>$5.00</h5>
+                        <span class="remove-item">remove</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"></i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                 </div>
+
+                </div>
+                <div class="cart-footer">
+                    <h3>Your total : $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">CLEAR CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------- Login Container ------------------->
+
+        <div class="container2" id="signin">
+
+            <!------------ Left-Side of Login Container ------------->
+            <div class="login-box1">
+
+                <button type="button" class="login-box">Login</button>
+
+                <!--------------- Login Page after clicking login button ---------->
+                <div class="login-page">
+                    <form class="fields" name="fields" novalidate>
+                        <h1 class="form-heading">Login Details</h1>
+                        <label>Your Email</label>
+                        <input name="email" class="login-input" type="email" placeholder="Email" required />
+
+                        <div class="error email">
+                            <p>Looks like this is not an email</p>
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        </div>
+                        <label>Your Password</label>
+                        <input name="password" class="login-input" type="password" placeholder="Password" required />
+
+                        <div class="error password">
+                            <p>Password cannot be empty</p>
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        </div>
+                        <button type="submit" class="login-button">Sign In</button>
+                        <div class="login-para">
+                            <p><u>Don't have an account?</u></p>
+                            <p><u>Forgot Password</u></p>
+                        </div>
+
+                        <span class="close">X</span>
+                    </form>
+
+                </div>
+
+
+                <button class="signup-box">Sign up</button>
+
+                <!--------------- Changing Text ----------------->
+                <div class="changing-text">
+                    <span class="text first-text"></span>
+                </div>
+
+                <h2 class="login-box-head">Order food from favourite restaurants near you.</h2>
+
+                <input type="text" placeholder="Enter your delivery location" class="searchInput">
+                <p class="searchInput-box">FIND FOOD</p>
+
+                <p class="para">POPULAR CITIES IN INDIA</p>
+                <p class="para1">Delhi Mumbai Bhubaneswar Kolkata Pune Bangalor & more.</p>
+            </div>
+
+            <!---------------- Right-Side of Login Container ------------->
+            <div class="login-box2">
+                <img src="loginpic.jpg">
+            </div>
+        </div>
+
+        <!------------------- Services Container --------------------------->
+
+        <div class="container3" id="service">
+            <div class="min-order">
+                <img src="minorder.webp">
+                <h3 class="min-order-head">No Minimum Order</h3>
+                <p class="min-order-para">Order in for yourself or for the group, with no restrictions on order value
+                </p>
+            </div>
+
+            <div class="min-order">
+                <img src="track.webp">
+                <h3 class="min-order-head">No Minimum Order</h3>
+                <p class="min-order-para">Order in for yourself or for the group, with no restrictions on order value
+                </p>
+            </div>>
+
+            <div class="min-order">
+                <img src="delivery.webp">
+                <h3 class="min-order-head">No Minimum Order</h3>
+                <p class="min-order-para">Order in for yourself or for the group, with no restrictions on order value
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerBox">
+            <div class="footerContent">
+                <h2 class="footerHeading">Company</h2>
+                <ul>
+                    <li>About us</li>
+                    <li>Team</li>
+                    <li>Careers</li>
+                    <li>Tasty Blog </li>
+                    <li>Tasty One</li>
+                    <li>Gift Cards</li>
+                    <li>Tasty Instamart</li>
+                    <li>Tasty Team</li>
+                </ul>
+
+            </div>
+            <div class="footerContent">
+                <h2 class="footerHeading">Contact</h2>
+                <ul>
+                    <li>Help & Support</li>
+                    <li>Partner With Us</li>
+                    <li>Ride With Us</li>
+
+                </ul>
+
+
+            </div>
+            <div class="footerContent">
+                <h2 class="footerHeading">Tasty</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Investor Relations</li>
+                    <li>Testimonial</li>
+                    <li>Social Responsibilities</li>
+                    <li>Travel Community</li>
+                    <li>Site Map</li>
+                    <li>Contact Us</li>
+                    <li>Complaints</li>
+                    <li>Privacy Policy</li>
+                    <li>Payment Security</li>
+                    <li>FAQs</li>
+                </ul>
+
+
+            </div>
+            <div class="footerContent">
+                <h2 class="footerHeading">Legal</h2>
+                <ul>
+                    <li>Offer Terms</li>
+                    <li>Investor Relations</li>
+                    <li>Testimonial</li>
+                    <li>Social Responsibilities</li>
+                    <li>Travel Community</li>
+                    <li>Complaints</li>
+                    <li>Privacy Policy</li>
+                    <li>Payment Security</li>
+                    <li>FAQs</li>
+                </ul>
+
+
+            </div>
+            <div class="footerContent">
+                <h2 class="footerHeading">Follow us</h2>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Google</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
