@@ -1,0 +1,37 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Pasta",
+          "price": 5.00,
+          "image": { "fields": { "file": { "url": "italy1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Pizza",
+          "price": 6,
+          "image": { "fields": { "file": { "url": "italy2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Desert",
+          "price": 6,
+          "image": { "fields": { "file": { "url": "italy3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Bruschetta",
+          "price": 15,
+          "image": { "fields": { "file": { "url": "italy4.jpg" } } }
+        }
+      }
+
+    ]
+  }
