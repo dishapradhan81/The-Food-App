@@ -31,7 +31,41 @@
           "price": 15,
           "image": { "fields": { "file": { "url": "italy4.jpg" } } }
         }
+      },
+
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Tacos",
+          "price": 5,
+          "image": { "fields": { "file": { "url": "maxican1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Guacamole",
+          "price": 10,
+          "image": { "fields": { "file": { "url": "maxican2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Combo",
+          "price": 8,
+          "image": { "fields": { "file": { "url": "maxican3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Penne Pasta",
+          "price": 5,
+          "image": { "fields": { "file": { "url": "maxican5.jpg" } } }
+        }
       }
+     
 
     ]
   }

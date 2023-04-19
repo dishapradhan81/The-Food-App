@@ -1,5 +1,8 @@
 
     @media screen and (max-width:1267px){
+        body {
+            overflow-x: auto;
+          }
     .navbar{
         height: 8vh;
         width:100%;
@@ -59,14 +62,18 @@
         
         
     }
-    .card{
-        height:40vh;
-        overflow-x: scroll;
-    }
-    .card2{
-        height:40vh;
-        overflow-x: scroll;
-    }
+    
+    .card {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+      .card > * {
+        flex: 0 0 auto;
+        width: 260px;
+        margin-right: 1.5rem;
+        
+      }
     .login-box2 img {
         display: none;
     }
