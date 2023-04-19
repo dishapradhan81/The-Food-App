@@ -369,30 +369,66 @@ main{
 
 }
 
-/********************* Menu Conatiner For Itallian Foods  ***********************/
-
-.conatiner-title2 {
-    padding: 10px 25px;
+/********************* Menu Conatiner  ***********************/
+.products {
+    padding: 4rem 0;
+  }
+  .section-title h2 {
+    text-align: center;
+    font-size: 2.6 rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
     color: rgb(255, 94, 0);
-}
+  }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 35px;
-    height: 60vh;
+   
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.img-container {
     position: relative;
+    overflow: hidden;
+  }
+
+.bag-button {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    /* bottom: 60px;
+    left: 50px; */
+    color: white;
+    background-color: #4dbf00;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 1s linear;
+    transform: translateX(101%);
+    cursor: pointer;
+
+}
+.bag-button:hover{
+    color: black;
+}
+.img-container:hover .bag-button{
+    transform: translateX(0);
 }
 
-/******** Menu Conatiner For Maxican Foods **********/
-.card2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 35px;
-    height: 60vh;
+
+.container-list-item:hover .img-para,
+.container-list-item:hover .bag-button {
+    opacity: 1;
 }
+
+
+
 
 /************************* Cart *********************/
 .cart-overlay {
@@ -404,7 +440,7 @@ main{
     transition: all 1s linear;
     background: rgb(240, 157, 81, 0.5);
     z-index: 2;
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   .cart {
     position: fixed;
@@ -417,7 +453,7 @@ main{
     background: rgb(231, 226, 221);
     padding: 1.5rem;
     transition: all 1s linear;
-    /* transform: translateX(100%); */
+    transform: translateX(100%);
   }
   .showCart {
     transform: translateX(0);
